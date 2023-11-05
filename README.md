@@ -9,6 +9,10 @@ Linux and MacOS vs. Windows:
     * The emulator runs about 20% faster on Linux and MacOS because the Gnu C++ compiler generates more
       efficient code than the Microsoft compiler. (But you can build with the Gnu compiler on Windows to
       get the performance there too.)
+    * with Visual Studio 2022, the emulator can be compiled with 
+        cl.exe ntvao.cxx mos6502.cxx /I. /DNDEBUG user32.lib
+        (no Watcom conditional compiles, the resulting exe must be launched in Windows XP compatibility mode
+        for better results)
 
 Usage:
 
